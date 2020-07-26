@@ -2,14 +2,6 @@
 
 Automatic build for distroless grafana container
 
-## Volumes
-
-```
-/app = application folder with /app/<command>
-/config = config folder with /config/<app>.ext
-/data = data forlder with /data volume mount
-```
-
 ## Default CMD
 ```
 CMD [ \
