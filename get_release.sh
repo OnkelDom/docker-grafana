@@ -2,7 +2,7 @@
 
 telegram_token=$(cat .telegram_token)
 telegram_chatid=$(cat .telegram_chatid)
-repo="grafana/grafana"
+repo=grafana/grafana
 current_release=$(curl -s "https://api.github.com/repos/$repo/releases/latest" | awk -F '"' '/tag_name/{print $4}' | sed 's/v//')
 dockerfile_version=$(grep "ARG\ version=" Dockerfile | awk -F'=' '{print $NF}')
 

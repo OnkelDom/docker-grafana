@@ -1,5 +1,5 @@
 FROM docker.io/ubuntu:20.04 as builder
-ARG version=7.0.6
+ARG version=7.1.1
 
 ADD https://dl.grafana.com/oss/release/grafana-${version}.linux-amd64.tar.gz /tmp/grafana_${version}.tar.gz
 RUN apt-get update && apt install -y ca-certificates && \
